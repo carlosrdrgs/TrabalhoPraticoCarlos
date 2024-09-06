@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Cadastro de Alunos</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  </head>
+  <body>
+      <nav>
+          <div class="nav-wrapper white">
+            <a href="" class="brand-logo"><img src="icons/school_24dp_FFFFFFF_FILL0_wght400_GRAD0_opsz24.png"></a>
+            <ul id="slide-out" class="sidenav">
+                <li><a href="#!">Primeiro Link</a></li>
+                <li><a href="#!">Segundo Link</a></li>
+              </ul>              
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <i class="material-icons sidenav-trigger" data-target="slide-out">person</i>
+            </ul>
+          </div>
+      </nav>
+        
+      <div class="escolhas">
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><h1>Cadastrar</h1></div>
+            <div class="collapsible-body">
+              <div class="container">
+                <form id="cadastroForm">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="nome" type="text" class="validate" required minlength="10">
+                            <label for="nome">Nome Completo</label>
+                            <span class="helper-text" data-error="O nome deve ter pelo menos 10 caracteres e 2 palavras"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="idade" type="number" class="validate" required min="1" max="150">
+                            <label for="idade">Idade</label>
+                            <span class="helper-text" data-error="A idade deve estar entre 1 e 150"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="curso" type="text" class="validate" required minlength="3">
+                            <label for="curso">Curso</label>
+                            <span class="helper-text" data-error="O curso deve ter pelo menos 3 caracteres"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                          <label>Turno</label>
+                          <br>
+                          <p>
+                              <label>
+                                  <input name="turno" type="radio" value="Manhã" required/>
+                                  <span>Manhã</span>
+                              </label>
+                          </p>
+                          <p>
+                              <label>
+                                  <input name="turno" type="radio" value="Tarde" />
+                                  <span>Tarde</span>
+                              </label>
+                          </p>
+                          <p>
+                              <label>
+                                  <input name="turno" type="radio" value="Noite" />
+                                  <span>Noite</span>
+                              </label>
+                          </p>
+                      </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label>Matriculado</label>
+                            <br>
+                            <p>
+                                <label>
+                                    <input name="matriculado" type="radio" value="Sim" required/>
+                                    <span>Sim</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="matriculado" type="radio" value="Não" />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="cep" type="text" class="validate" required>
+                            <label for="cep">CEP</label>
+                            <span class="helper-text" data-error="CEP inválido"></span>
+                        </div>
+                    </div>
+                </form>
+                <button class="buttonCarregar" type="submit">Cadastrar</button>
+            </div>
+                    
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><h1 class="listar">Listar</h1></div>
+            <div class="collapsible-body"><div class="lista"></div></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><h1>Lixeira</h1></div>
+            <div class="collapsible-body">
+              <div class="lixeira"></div>
+              <button class="esvaziarLixeira">Esvaziar Lixeira</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="black-text text-lighten-4">Trabalho prático Páginas Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright black">
+            <div class="container">
+            © 2024 Copyright Carlos Henrique Rodrigues Costa
+            <a class="black-text text-lighten-4 right" href="#">Mais Links</a>
+            </div>
+          </div>
+        </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="main.js"></script>
+  </body>
+</html>

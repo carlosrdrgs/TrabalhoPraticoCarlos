@@ -1,0 +1,103 @@
+body {
+  background-color: white;
+}
+
+button {
+  color: black;
+  border: solid 1px black;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.lista, .lixeira {
+  border: solid 1px black;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+nav img {
+  height: 65px;
+  padding-left: 20px;
+}
+
+nav {
+  border-bottom: solid 1px black !important;
+  box-shadow: none !important;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  color: black !important;
+  font-family: Arial, sans-serif;
+}
+
+.escolhas {
+  padding-top: 100px;
+  padding-left: 100px;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .escolhas {
+      padding-left: 50px;
+  }
+}
+
+footer {
+  width: 100%;
+  border-top: solid 1px black !important;
+  box-shadow: none !important;
+}
+
+.escolhas h1 {
+  font-family: Arial, sans-serif;
+  color: #121212;
+  font-weight: 700;
+  font-size: 180px;
+}
+
+@media screen and (max-width: 1200px) {
+  .escolhas h1 {
+      font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .escolhas h1 {
+      font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .escolhas h1 {
+      font-size: 60px;
+  }
+}
+
+.material-icons {
+  color: black;
+  font-size: 55px !important;
+  padding-right: 20px;
+}
+
+.collapsible {
+  box-shadow: none;
+  border: none;
+}
+
+.collapsible-header {
+  border-bottom: none;
+}
+
+collapsible-body {
+  border-bottom: none;
+}
